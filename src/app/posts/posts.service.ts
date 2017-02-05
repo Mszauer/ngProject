@@ -4,7 +4,7 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class PostsService{
-    private _url = 'http://jsonplaceholder.typicode.com/posts'
+    private _url = 'https://jsonplaceholder.typicode.com/posts'
     constructor( private _http: Http){}
 
     getPosts(filter?){
