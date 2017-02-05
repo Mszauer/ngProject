@@ -1,6 +1,6 @@
 webpackJsonp([1,4],{
 
-/***/ 107:
+/***/ 106:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20,7 +20,7 @@ __webpack_require__(378);
 var UsersService = (function () {
     function UsersService(_http) {
         this._http = _http;
-        this._url = 'http://jsonplaceholder.typicode.com/users/';
+        this._url = 'https://jsonplaceholder.typicode.com/users/';
     }
     UsersService.prototype.getUsers = function () {
         return this._http.get(this._url) //get the url as observable
@@ -54,7 +54,7 @@ exports.UsersService = UsersService;
 
 /***/ }),
 
-/***/ 217:
+/***/ 218:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -70,8 +70,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(0);
 var posts_service_1 = __webpack_require__(337);
-var user_service_1 = __webpack_require__(107);
-var _ = __webpack_require__(695);
+var user_service_1 = __webpack_require__(106);
+var _ = __webpack_require__(696);
 var PostsComponent = (function () {
     function PostsComponent(_postsService, _usersService) {
         this._postsService = _postsService;
@@ -121,7 +121,7 @@ var PostsComponent = (function () {
     };
     PostsComponent = __decorate([
         core_1.Component({
-            template: __webpack_require__(676)
+            template: __webpack_require__(677)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof posts_service_1.PostsService !== 'undefined' && posts_service_1.PostsService) === 'function' && _a) || Object, (typeof (_b = typeof user_service_1.UsersService !== 'undefined' && user_service_1.UsersService) === 'function' && _b) || Object])
     ], PostsComponent);
@@ -236,7 +236,7 @@ __webpack_require__(378);
 var PostsService = (function () {
     function PostsService(_http) {
         this._http = _http;
-        this._url = 'http://jsonplaceholder.typicode.com/posts';
+        this._url = 'https://jsonplaceholder.typicode.com/posts';
     }
     PostsService.prototype.getPosts = function (filter) {
         var url = this._url;
@@ -279,9 +279,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(0);
 var forms_1 = __webpack_require__(305);
-var router_1 = __webpack_require__(78);
-var user_service_1 = __webpack_require__(107);
-var user_1 = __webpack_require__(518);
+var router_1 = __webpack_require__(77);
+var user_service_1 = __webpack_require__(106);
+var user_1 = __webpack_require__(519);
 var UserFormComponent = (function () {
     function UserFormComponent(fb, _usersService, _router, _route) {
         this._usersService = _usersService;
@@ -343,7 +343,7 @@ var UserFormComponent = (function () {
     };
     UserFormComponent = __decorate([
         core_1.Component({
-            template: __webpack_require__(677)
+            template: __webpack_require__(678)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof forms_1.FormBuilder !== 'undefined' && forms_1.FormBuilder) === 'function' && _a) || Object, (typeof (_b = typeof user_service_1.UsersService !== 'undefined' && user_service_1.UsersService) === 'function' && _b) || Object, (typeof (_c = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _c) || Object, (typeof (_d = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _d) || Object])
     ], UserFormComponent);
@@ -370,8 +370,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(0);
-var user_service_1 = __webpack_require__(107);
-var router_1 = __webpack_require__(78);
+var user_service_1 = __webpack_require__(106);
+var router_1 = __webpack_require__(77);
 var UsersComponent = (function () {
     function UsersComponent(_usersService, _router) {
         var _this = this;
@@ -397,7 +397,7 @@ var UsersComponent = (function () {
     };
     UsersComponent = __decorate([
         core_1.Component({
-            template: __webpack_require__(678)
+            template: __webpack_require__(679)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof user_service_1.UsersService !== 'undefined' && user_service_1.UsersService) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object])
     ], UsersComponent);
@@ -430,8 +430,8 @@ webpackEmptyContext.id = 393;
 
 var platform_browser_dynamic_1 = __webpack_require__(480);
 var core_1 = __webpack_require__(0);
-var environment_1 = __webpack_require__(521);
-var app_module_1 = __webpack_require__(510);
+var environment_1 = __webpack_require__(522);
+var app_module_1 = __webpack_require__(511);
 if (environment_1.environment.production) {
     core_1.enableProdMode();
 }
@@ -440,7 +440,7 @@ platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(app_module_1
 
 /***/ }),
 
-/***/ 509:
+/***/ 510:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -472,7 +472,7 @@ exports.AppComponent = AppComponent;
 
 /***/ }),
 
-/***/ 510:
+/***/ 511:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -489,15 +489,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = __webpack_require__(0);
 var platform_browser_1 = __webpack_require__(151);
 var http_1 = __webpack_require__(147);
-var app_component_1 = __webpack_require__(509);
-var navbar_component_1 = __webpack_require__(512);
+var app_component_1 = __webpack_require__(510);
+var navbar_component_1 = __webpack_require__(513);
 var home_component_1 = __webpack_require__(335);
 var not_found_component_1 = __webpack_require__(336);
-var users_module_1 = __webpack_require__(519);
-var posts_module_1 = __webpack_require__(513);
-var users_routing_1 = __webpack_require__(520);
-var app_routing_1 = __webpack_require__(511);
-var posts_routing_1 = __webpack_require__(514);
+var users_module_1 = __webpack_require__(520);
+var posts_module_1 = __webpack_require__(514);
+var users_routing_1 = __webpack_require__(521);
+var app_routing_1 = __webpack_require__(512);
+var posts_routing_1 = __webpack_require__(515);
 var AppModule = (function () {
     function AppModule() {
     }
@@ -520,14 +520,14 @@ exports.AppModule = AppModule;
 
 /***/ }),
 
-/***/ 511:
+/***/ 512:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var router_1 = __webpack_require__(78);
+var router_1 = __webpack_require__(77);
 var home_component_1 = __webpack_require__(335);
-var posts_component_1 = __webpack_require__(217);
+var posts_component_1 = __webpack_require__(218);
 var users_component_1 = __webpack_require__(339);
 var not_found_component_1 = __webpack_require__(336);
 exports.routing = router_1.RouterModule.forRoot([
@@ -541,7 +541,7 @@ exports.routing = router_1.RouterModule.forRoot([
 
 /***/ }),
 
-/***/ 512:
+/***/ 513:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -562,7 +562,7 @@ var NavbarComponent = (function () {
     NavbarComponent = __decorate([
         core_1.Component({
             selector: 'navbar',
-            template: __webpack_require__(675)
+            template: __webpack_require__(676)
         }), 
         __metadata('design:paramtypes', [])
     ], NavbarComponent);
@@ -573,7 +573,7 @@ exports.NavbarComponent = NavbarComponent;
 
 /***/ }),
 
-/***/ 513:
+/***/ 514:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -588,12 +588,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(0);
-var common_1 = __webpack_require__(59);
+var common_1 = __webpack_require__(58);
 var http_1 = __webpack_require__(147);
-var shared_module_1 = __webpack_require__(516);
-var posts_component_1 = __webpack_require__(217);
+var shared_module_1 = __webpack_require__(517);
+var posts_component_1 = __webpack_require__(218);
 var posts_service_1 = __webpack_require__(337);
-var user_service_1 = __webpack_require__(107);
+var user_service_1 = __webpack_require__(106);
 var PostsModule = (function () {
     function PostsModule() {
     }
@@ -613,13 +613,13 @@ exports.PostsModule = PostsModule;
 
 /***/ }),
 
-/***/ 514:
+/***/ 515:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var router_1 = __webpack_require__(78);
-var posts_component_1 = __webpack_require__(217);
+var router_1 = __webpack_require__(77);
+var posts_component_1 = __webpack_require__(218);
 exports.postsRouting = router_1.RouterModule.forChild([
     { path: 'posts', component: posts_component_1.PostsComponent }
 ]);
@@ -627,7 +627,7 @@ exports.postsRouting = router_1.RouterModule.forChild([
 
 /***/ }),
 
-/***/ 515:
+/***/ 516:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -700,7 +700,7 @@ exports.PaginationComponent = PaginationComponent;
 
 /***/ }),
 
-/***/ 516:
+/***/ 517:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -715,9 +715,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(0);
-var common_1 = __webpack_require__(59);
-var pagination_component_1 = __webpack_require__(515);
-var spinner_component_1 = __webpack_require__(517);
+var common_1 = __webpack_require__(58);
+var pagination_component_1 = __webpack_require__(516);
+var spinner_component_1 = __webpack_require__(518);
 var SharedModule = (function () {
     function SharedModule() {
     }
@@ -744,7 +744,7 @@ exports.SharedModule = SharedModule;
 
 /***/ }),
 
-/***/ 517:
+/***/ 518:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -781,7 +781,7 @@ exports.SpinnerComponent = SpinnerComponent;
 
 /***/ }),
 
-/***/ 518:
+/***/ 519:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -803,7 +803,7 @@ exports.User = User;
 
 /***/ }),
 
-/***/ 519:
+/***/ 520:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -818,12 +818,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(0);
-var common_1 = __webpack_require__(59);
+var common_1 = __webpack_require__(58);
 var forms_1 = __webpack_require__(305);
-var router_1 = __webpack_require__(78);
+var router_1 = __webpack_require__(77);
 var users_component_1 = __webpack_require__(339);
 var user_form_component_1 = __webpack_require__(338);
-var user_service_1 = __webpack_require__(107);
+var user_service_1 = __webpack_require__(106);
 var dirty_tracking_service_1 = __webpack_require__(334);
 var UsersModule = (function () {
     function UsersModule() {
@@ -848,12 +848,12 @@ exports.UsersModule = UsersModule;
 
 /***/ }),
 
-/***/ 520:
+/***/ 521:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var router_1 = __webpack_require__(78);
+var router_1 = __webpack_require__(77);
 var user_form_component_1 = __webpack_require__(338);
 var dirty_tracking_service_1 = __webpack_require__(334);
 exports.usersRouting = router_1.RouterModule.forChild([
@@ -866,7 +866,7 @@ exports.usersRouting = router_1.RouterModule.forChild([
 
 /***/ }),
 
-/***/ 521:
+/***/ 522:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -882,35 +882,35 @@ exports.environment = {
 
 /***/ }),
 
-/***/ 675:
+/***/ 676:
 /***/ (function(module, exports) {
 
 module.exports = "<nav class=\"navbar navbar-default\">\r\n    <!-- Brand and toggle get grouped for better mobile display -->\r\n    <div class=\"navbar-header\">\r\n      <a class=\"navbar-brand\" routerLink='' routerLinkActive='active'>ngProject</a>\r\n    </div>\r\n\r\n    <!-- Collect the nav links, forms, and other content for toggling -->\r\n    <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\r\n      <ul class=\"nav navbar-nav\">\r\n        <li><a routerLink='users' routerLinkActive='active'>Users</a></li>\r\n        <li><a routerLink='posts' routerLinkActive='active'>Posts</a></li>\r\n      </ul>\r\n    </div><!-- /.navbar-collapse -->\r\n</nav>"
 
 /***/ }),
 
-/***/ 676:
+/***/ 677:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container\">\r\n    <h1 class='text-center'>Posts</h1>\r\n    <select class=\"form-control col-sm-6\" (change)=\"onSelectUser({ userId: u.value })\" #u>\r\n        <option selected disabled> Select a user...</option>\r\n        <option value=\"\"> All Posts</option>\r\n        <option *ngFor='let user of users' value=\"{{ user.id }}\">\r\n            {{ user.name }}\r\n        </option>\r\n    </select>\r\n    <spinner [visible]='postsLoading'></spinner>\r\n    <pagination [items]=\"posts\" (page-changed)=\"onPageChanged($event)\"></pagination>\r\n    <ul class=\"list-group col-sm-6\">\r\n        <li class=\"list-group-item post\" *ngFor='let post of pagedPosts' \r\n            id='post.id' (click)='onSelectPost(post)' [class.active]='selectedPost == post'>\r\n            {{ post.title }}\r\n        </li>\r\n    </ul>\r\n    <div class=\"panel panel-default pull-right col-sm-5\" *ngIf='selectedPost'>\r\n        <div class=\"panel-heading\" >\r\n            <h3 class=\"panel-title\"> {{ selectedPost.title }} </h3>\r\n        </div>\r\n        <div class=\"panel-body\">\r\n            {{ selectedPost.body }}\r\n            <hr/>\r\n            <spinner [visible]='commentsLoading'></spinner>\r\n            <div class=\"media\" *ngFor='let comment of comments'>\r\n                <div class=\"media-left\">\r\n                    <a href=\"#\">\r\n                    <img class=\"media-object\" src=\"http://lorempixel.com/80/80/people?random={{ comment.id }}\"\r\n                         alt=\"Picture from lorempixel\">\r\n                    </a>\r\n                </div>\r\n                <div class=\"media-body\">\r\n                    <h4 class=\"media-heading\">{{ comment.name }}</h4>\r\n                    {{ comment.body }}\r\n                </div>\r\n            </div>\r\n\r\n        </div>\r\n    </div>\r\n</div>\r\n"
 
 /***/ }),
 
-/***/ 677:
+/***/ 678:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container container-fluid\">\n    <div class=\"col-md-6 well\">\n        <h1 class=\"text-center\">{{ title }}</h1>\n        <form [formGroup]='form' \n              (ngSubmit)='onSubmit(form.value)'>\n            <fieldset>\n                <legend class=\"text-center\">User</legend>\n                <div class=\"form-group\">\n                    <label>Name: </label>\n                    <input formControlName='name' id='name'\n                            type=\"text\" class=\"form-control\" \n                            [(ngModel)]=\"user.name\" required>\n                    <div *ngIf='form.controls.name.touched \n                                && form.controls.name.errors'>\n                            <div *ngIf='form.controls.name.errors.required'\n                                    class=\"alert alert-danger\">\n                                Name is required.\n                            </div>\n                    </div>\n                </div>\n                <div class=\"form-group\">\n                    <label >Email: </label>\n                    <input formControlName=\"email\" id='email'\n                            type=\"text\" class=\"form-control\" \n                            [(ngModel)]=\"user.email\"\n                            required>\n                    <div *ngIf='form.controls.email.touched\n                                && form.controls.email.errors'>\n                        <div *ngIf='form.controls.email.errors.required'\n                                class=\"alert alert-danger\">\n                            A valid Email is required.\n                        </div>                       \n                    </div>\n                </div>\n                <div class=\"form-group\">\n                    <label>Phone: </label>\n                    <input formControlName=\"phone\" id=\"phone\"\n                            type=\"text\" class=\"form-control\"\n                            [(ngModel)]=\"user.phone\">\n                </div>\n            </fieldset>\n            <fieldset formArrayName=\"address\">\n                <legend class=\"text-center\">Address</legend>\n                <div class=\"form-group\">\n                    <label>Street: </label>\n                    <input formControlName=\"street\" id=\"street\"\n                            type=\"text\" class=\"form-control\"\n                            [(ngModel)]=\"user.address.street\">\n                </div>\n                <div class=\"form-group\">\n                    <label >Suite: </label>\n                    <input formControlName=\"suite\" id=\"suite\"\n                            type=\"text\" class=\"form-control\"\n                            [(ngModel)]=\"user.address.suite\">\n                </div>\n                <div class=\"form-group\">\n                    <label>City: </label>\n                    <input formControlName=\"city\" id=\"city\"\n                            type=\"text\" class=\"form-control\"\n                            [(ngModel)]=\"user.address.city\">\n                </div>\n                <div class=\"form-group\">\n                    <label>ZipCode: </label>\n                    <input formControlName=\"zipcode\" id=\"zipcode\"\n                            type=\"text\" class=\"form-control\"\n                            [(ngModel)]=\"user.address.zipcode\">\n                </div>\n                <div *ngIf='!form.valid' class='alert alert-danger'>\n                    Please make sure the form is filled out completely.\n                </div>\n                <button class='btn btn-primary' type='submit' [disabled]='!form.valid'\n                        >Submit</button>\n            </fieldset>\n        </form>\n    </div>\n</div>"
 
 /***/ }),
 
-/***/ 678:
+/***/ 679:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"text-center\">\n    <h1> Users</h1>\n    <a href=\"users/new\" class=\"btn btn-primary\">Add New User</a>\n</div>\n<table class=\"table table-bordered\">\n    <thead>\n        <tr>\n            <th>Name</th>\n            <th>Email</th>\n            <th>Edit</th>\n            <th>Delete</th>\n        </tr>\n    </thead>\n    <tbody *ngFor= \"let user of users\" >\n        <tr>\n            <td> {{ user.name }}</td>\n            <td> {{ user.email }}</td>\n            <td><a [routerLink]=\"['/users/edit',user.id]\"><i class=\"fa fa-pencil-square-o\" aria-hidden=\"true\"></i></a></td>\n            <td><i (click)=\"onRemoveUser(user)\" class=\"fa fa-trash-o\" aria-hidden=\"true\"></i></td>            \n        </tr>\n    </tbody>\n</table>"
 
 /***/ }),
 
-/***/ 697:
+/***/ 698:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(394);
@@ -918,5 +918,5 @@ module.exports = __webpack_require__(394);
 
 /***/ })
 
-},[697]);
+},[698]);
 //# sourceMappingURL=main.bundle.map
