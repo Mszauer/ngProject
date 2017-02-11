@@ -906,7 +906,7 @@ module.exports = "<div class=\"container container-fluid\">\n    <div class=\"co
 /***/ 679:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"text-center\">\n    <h1> Users</h1>\n    <a href=\"users/new\" class=\"btn btn-primary\">Add New User</a>\n</div>\n<table class=\"table table-bordered\">\n    <thead>\n        <tr>\n            <th>Name</th>\n            <th>Email</th>\n            <th>Edit</th>\n            <th>Delete</th>\n        </tr>\n    </thead>\n    <tbody *ngFor= \"let user of users\" >\n        <tr>\n            <td> {{ user.name }}</td>\n            <td> {{ user.email }}</td>\n            <td><a [routerLink]=\"['/users/edit',user.id]\"><i class=\"fa fa-pencil-square-o\" aria-hidden=\"true\"></i></a></td>\n            <td><i (click)=\"onRemoveUser(user)\" class=\"fa fa-trash-o\" aria-hidden=\"true\"></i></td>            \n        </tr>\n    </tbody>\n</table>"
+module.exports = "<div class=\"text-center\">\n    <h1> Users</h1>\n    <a routerLink=\"/users/new\" class=\"btn btn-primary\">Add New User</a>\n</div>\n<table class=\"table table-bordered\">\n    <thead>\n        <tr>\n            <th>Name</th>\n            <th>Email</th>\n            <th>Edit</th>\n            <th>Delete</th>\n        </tr>\n    </thead>\n    <tbody *ngFor= \"let user of users\" >\n        <tr>\n            <td> {{ user.name }}</td>\n            <td> {{ user.email }}</td>\n            <td><a [routerLink]=\"['/users/edit',user.id]\"><i class=\"fa fa-pencil-square-o\" aria-hidden=\"true\"></i></a></td>\n            <td><i (click)=\"onRemoveUser(user)\" class=\"fa fa-trash-o\" aria-hidden=\"true\"></i></td>            \n        </tr>\n    </tbody>\n</table>"
 
 /***/ }),
 
